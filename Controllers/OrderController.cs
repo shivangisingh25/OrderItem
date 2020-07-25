@@ -12,7 +12,7 @@ namespace order.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        readonly string Baseurl = "http://20.189.120.18/";
+        readonly string Baseurl = "http://52.229.228.53/";
         [HttpGet]
         [Route("Add/{menuitemid}")]
         public async Task<String> Get(int menuitemid)

@@ -14,17 +14,17 @@ spec:
     spec:
       containers:
       - name:   orderitem
-        image: truymcr.azurecr.io/orderrepos:latest
+        image: menucr.azurecr.io/orderitemepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: ordersn
+      - name: ordersitemsn
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: menuitemlisting
+  name: orderitem
 spec:
   type: LoadBalancer
   ports:
