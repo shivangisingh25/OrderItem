@@ -26,7 +26,7 @@ namespace order.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var name = response.Content.ReadAsStringAsync().Result;
-                    //string obj = JsonConvert.DeserializeObject<string>(name);
+                   
                     return name;
                 }
                 return null;
